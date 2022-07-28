@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    font-weight: bold;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.colors {
+    display: flex;
+    width: 20%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+.color-code {
+    display: flex;
+    width: 70px;
+    background: none;
+    border: none;
+    text-align: center;
+    outline: 0;
+    cursor: pointer;
+}
+#btn-action {
+    color: black;
+    background-color: none;
+    border: none;
+    font-size: 2rem;
+    position: fixed;
+    top: 25rem;
+    left: 49%;
+    cursor: pointer;
+}
+
+.locker {
+    cursor: pointer;
+}
+
+.material-icons {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(40, 40, 40, 0.82);
+    font-size: 13px;
+    user-select: none;
+    text-decoration-line: underline;
+}

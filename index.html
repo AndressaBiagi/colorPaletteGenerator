@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/338b0da595.js" crossorigin="anonymous"></script>
+    <title>Color Pallete Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="colors" id="color-1">
+            <input class="color-code" type="text" id="color-hex-1" value="#FFFFFF" onclick="copyColor('1')" title="Click to copy color" readonly>
+            <span class="locker" id="locker-color-1" onclick="lockColor(0)">
+                <i class="material-icons" id="lock-icon-1">Lock</i>
+            </span>
+        </div>
+        <div class="colors" id="color-2">
+            <input class="color-code" type="text" id="color-hex-2" value="#FFFFFF" onclick="copyColor('2')" title="Click to copy color" readonly>
+            <span class="locker" id="locker-color-2" onclick="lockColor(1)">
+                <i class="material-icons" id="lock-icon-2">Lock</i>
+            </span>
+        </div>
+        <div class="colors" id="color-3">
+            <input class="color-code" type="text" id="color-hex-3" value="#FFFFFF" onclick="copyColor('3')" title="Click to copy color" readonly>
+            <span class="locker" id="locker-color-3" onclick="lockColor(2)">
+                <i class="material-icons" id="lock-icon-3">Lock</i>
+            </span>
+        </div>
+        <div class="colors" id="color-4">
+            <input class="color-code" type="text" id="color-hex-4" value="#FFFFFF" onclick="copyColor('4')" title="Click to copy color" readonly>
+            <span class="locker" id="locker-color-4" onclick="lockColor(3)">
+                <i class="material-icons" id="lock-icon-4">Lock</i>
+            </span>
+        </div>
+        <div class="colors" id="color-5">
+            <input class="color-code" type="text" id="color-hex-5" value="#FFFFFF" onclick="copyColor('5')" title="Click to copy color" readonly>
+            <span class="locker" id="locker-color-5" onclick="lockColor(4)">
+                <i class="material-icons" id="lock-icon-5">lock</i>
+            </span>
+        </div>
+        <i class="fa-solid fa-rotate" type="button" value="Change Colors" id="btn-action"></i>
+    </div>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
