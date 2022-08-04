@@ -1,4 +1,4 @@
-# COLOR PALLETE GENERATOR 
+# COLOR PALETTE GENERATOR 
 
 ## Changing the colors
 To change the colors use the 'Change Colors' button;
