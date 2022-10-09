@@ -1,48 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/338b0da595.js" crossorigin="anonymous"></script>
-    <title>Color Pallete Generator</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/338b0da595.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Color Palette Generator</title>
+  </head>
+  <body>
+    <header>
+        <div class="page__title">
+            <h1>Make your own color palette!</h1>
+            <a target="_blank" class="page__link" href="https://github.com/AndressaBiagi/colorPaletteGenerator.git">
+                <i class="fa-brands fa-square-github"></i>
+                Star this repo!</a>       
+            </div>
+    </header>
     <div class="container">
-        <div class="colors" id="color-1">
-            <input class="color-code" type="text" id="color-hex-1" value="#FFFFFF" onclick="copyColor('1')" title="Click to copy color" readonly>
-            <span class="locker" id="locker-color-1" onclick="lockColor(0)">
-                <i class="material-icons" id="lock-icon-1">Lock</i>
-            </span>
+      <div class="color__columns" id="color-1">
+        <div class="color__hex">
+          <input
+            class="color-code"
+            type="text"
+            id="color-hex-1"
+            value="#FFFFFF"
+            onclick="copyColor('1')"
+            title="Click to copy color"
+            readonly
+          />
+          <span class="locker" id="locker__color-1" onclick="lockColor(0)">
+            <i class="lock__icon" id="lock__icon-1">Lock</i>
+          </span>
         </div>
-        <div class="colors" id="color-2">
-            <input class="color-code" type="text" id="color-hex-2" value="#FFFFFF" onclick="copyColor('2')" title="Click to copy color" readonly>
-            <span class="locker" id="locker-color-2" onclick="lockColor(1)">
-                <i class="material-icons" id="lock-icon-2">Lock</i>
-            </span>
+      </div>
+      <div class="color__columns" id="color-2">
+        <div class="color__hex">
+          <input
+            class="color-code"
+            type="text"
+            id="color-hex-2"
+            value="#FFFFFF"
+            onclick="copyColor('2')"
+            title="Click to copy color"
+            readonly
+          />
+          <span class="locker" id="locker__color-2" onclick="lockColor(1)">
+            <i class="lock__icon" id="lock__icon-2">Lock</i>
+          </span>
         </div>
-        <div class="colors" id="color-3">
-            <input class="color-code" type="text" id="color-hex-3" value="#FFFFFF" onclick="copyColor('3')" title="Click to copy color" readonly>
-            <span class="locker" id="locker-color-3" onclick="lockColor(2)">
-                <i class="material-icons" id="lock-icon-3">Lock</i>
-            </span>
+      </div>
+      <div class="color__columns" id="color-3">
+        <div class="color__hex">
+          <input
+            class="color-code"
+            type="text"
+            id="color-hex-3"
+            value="#FFFFFF"
+            onclick="copyColor('3')"
+            title="Click to copy color"
+            readonly
+          />
+          <span class="locker" id="locker__color-3" onclick="lockColor(2)">
+            <i class="lock__icon" id="lock__icon-3">Lock</i>
+          </span>
         </div>
-        <div class="colors" id="color-4">
-            <input class="color-code" type="text" id="color-hex-4" value="#FFFFFF" onclick="copyColor('4')" title="Click to copy color" readonly>
-            <span class="locker" id="locker-color-4" onclick="lockColor(3)">
-                <i class="material-icons" id="lock-icon-4">Lock</i>
-            </span>
+      </div>
+      <div class="color__columns" id="color-4">
+        <div class="color__hex">
+          <input
+            class="color-code"
+            type="text"
+            id="color-hex-4"
+            value="#FFFFFF"
+            onclick="copyColor('4')"
+            title="Click to copy color"
+            readonly
+          />
+          <span class="locker" id="locker__color-4" onclick="lockColor(3)">
+            <i class="lock__icon" id="lock__icon-4">Lock</i>
+          </span>
         </div>
-        <div class="colors" id="color-5">
-            <input class="color-code" type="text" id="color-hex-5" value="#FFFFFF" onclick="copyColor('5')" title="Click to copy color" readonly>
-            <span class="locker" id="locker-color-5" onclick="lockColor(4)">
-                <i class="material-icons" id="lock-icon-5">lock</i>
-            </span>
+      </div>
+      <div class="color__columns" id="color-5">
+        <div class="color__hex">
+          <input
+            class="color-code"
+            type="text"
+            id="color-hex-5"
+            value="#FFFFFF"
+            onclick="copyColor('5')"
+            title="Click to copy color"
+            readonly
+          />
+          <span class="locker" id="locker__color" onclick="lockColor(4)">
+            <i class="lock__icon" id="lock__icon-5">lock</i>
+          </span>
         </div>
-        <i class="fa-solid fa-rotate" type="button" value="Change Colors" id="btn-action"></i>
+      </div>
+      <i
+        class="fa-solid fa-rotate"
+        type="button"
+        value="Change Colors"
+        id="btn-action"
+      ></i>
     </div>
     <script src="./main.js"></script>
-    
-</body>
+  </body>
 </html>

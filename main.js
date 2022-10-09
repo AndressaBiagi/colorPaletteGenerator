@@ -32,10 +32,10 @@ function lockColor(index) {
         sc.index === savedColor.index && sc.color === savedColor.color);
     if(savedColorIndex === -1) {
         savedColors.push(savedColor);
-        document.querySelector(`#lock-icon-${index+1}`).textContent = 'Locked';
+        document.querySelector(`#lock__icon-${index+1}`).textContent = 'Locked';
 
     } else {
         savedColors.splice(savedColorIndex, 1);
-        document.querySelector(`#lock-icon-${index+1}`).textContent = 'Lock';
+        document.querySelector(`#lock__icon-${index+1}`).textContent = 'Lock';
     }
 }
